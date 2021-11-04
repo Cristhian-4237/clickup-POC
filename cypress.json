@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://app.clickup.com/login",
+  "defaultCommandTimeout": 40000,
+  "viewportHeight":900,
+  "viewportWidth":1400  
+}
