@@ -5,17 +5,7 @@ describe('Login Page', () => {
         cy.login();
                 
     });
-    /*it('Verify a new List can be created from right menu', () => {
-        cy.login();
-        cy.wait(4000);
-        //cy.get('cu2-project-list-bar-item[class="cu2-project-list-bar-item cdk-drag ng-tns-c585-18 ng-tns-c587-8 cu2-project-list-bar-item_open ng-star-inserted"]').trigger('mouseover');
-        //cy.contains('Getting Stared with ClickUp!').trigger('mouseover');
-        cy.get('div[class="cu2-project-list-bar-item__link ng-tns-c585-18 ng-star-inserted').click();
-        cy.wait(4000);
-        //cy.get('div[class="ng-tns-c585-18 ng-star-inserted cu-dropdown__menu cu-hidden-print cu-dropdown__menu_left cu-dropdown_open"]').invoke('show');
-        //cy.get('div[class="cu2-project-list-bar-item__link ng-tns-c585-18 ng-star-inserted"]').should('be.visible');
-    });*/
-
+    
     it('Verify a new task can be added in To Do', () => {
         cy.login();
         cy.contains('div.cu-data-view-item__name-text', 'Board').click();
@@ -46,13 +36,13 @@ describe('Login Page', () => {
         cy.contains('This is the test task in NEEDS REVIEW1.1').should('be.visible');
     });
 
-    it('It is possible drag and drop an element from TO DO to IN PROGRESS', () => {
+    /*it('It is possible drag and drop an element from TO DO to IN PROGRESS', () => {
         cy.login();
         cy.contains('div.cu-data-view-item__name-text', 'Board').click();
         //cy.contains('div[class="cu-panel-board__header-container ng-star-inserted"]', 'This is the test task in To DO3').drag('div[class="cu-dashboard-board__column ng-trigger ng-trigger-flyInOut ng-tns-c743-21 cu-dashboard-board__column_closed ng-star-inserted"]');
         //cy.contains('section[class="cdk-drag cu-panel-board cu-panel-board__task ng-tns-c743-22 ng-trigger ng-trigger-loadingEnter ng-star-inserted"]', 'This is the test task in To DO1').drag('div[class="cu-dashboard-board__column ng-trigger ng-trigger-flyInOut ng-tns-c743-21 cu-dashboard-board__column_closed ng-star-inserted"]');
         cy.contains('section[class="cdk-drag cu-panel-board cu-panel-board__task ng-tns-c743-22 ng-trigger ng-trigger-loadingEnter ng-star-inserted"]', 'This is the test task in To DO1').drag('div[class="cdk-drop-list cu-panel-board__column-drag ng-tns-c743-22 ng-star-inserted"]').eq(3);
-    });
+    });*/
 
     /*it('Verify it is possible drag 2', () => {
         cy.contains('div.cu-data-view-item__name-text', 'Board').click();
@@ -78,7 +68,7 @@ describe('Login Page', () => {
         cy.contains('div.cu-data-view-item__name-text', 'Board').click();
         cy.wait(5000);
         cy.contains('section[class^="cdk-drag cu-panel-board cu-panel-board__task"][class$="ng-trigger ng-trigger-loadingEnter ng-star-inserted"]', 'Deleted task').rightclick();
-        //cy.contains('div[class="cu-panel-board__clickable-name"]', 'Deleted task').trigger('mouseover');
+        //cy.contains('cdk-drag cu-panel-board cu-panel-board__task ng-tns-c743-21 ng-trigger ng-trigger-loadingEnter ng-star-inserted', 'Deleted task').trigger('mouseover');
         cy.get('a[class="nav-menu-item nav-menu-item__top-choices-option ng-star-inserted"]').eq(4).click();
         cy.contains('section[class^="cdk-drag cu-panel-board cu-panel-board__task"][class$="ng-trigger ng-trigger-loadingEnter ng-star-inserted"]', 'Deleted task').should('not.exist');
     });
