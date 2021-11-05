@@ -46,13 +46,13 @@ describe('Login Page', () => {
         cy.contains('This is the test task in NEEDS REVIEW1.1').should('be.visible');
     });
 
-    /*it('It is possible drag and drop an element from TO DO to IN PROGRESS', () => {
+    it('It is possible drag and drop an element from TO DO to IN PROGRESS', () => {
         cy.login();
         cy.contains('div.cu-data-view-item__name-text', 'Board').click();
         //cy.contains('div[class="cu-panel-board__header-container ng-star-inserted"]', 'This is the test task in To DO3').drag('div[class="cu-dashboard-board__column ng-trigger ng-trigger-flyInOut ng-tns-c743-21 cu-dashboard-board__column_closed ng-star-inserted"]');
         //cy.contains('section[class="cdk-drag cu-panel-board cu-panel-board__task ng-tns-c743-22 ng-trigger ng-trigger-loadingEnter ng-star-inserted"]', 'This is the test task in To DO1').drag('div[class="cu-dashboard-board__column ng-trigger ng-trigger-flyInOut ng-tns-c743-21 cu-dashboard-board__column_closed ng-star-inserted"]');
         cy.contains('section[class="cdk-drag cu-panel-board cu-panel-board__task ng-tns-c743-22 ng-trigger ng-trigger-loadingEnter ng-star-inserted"]', 'This is the test task in To DO1').drag('div[class="cdk-drop-list cu-panel-board__column-drag ng-tns-c743-22 ng-star-inserted"]').eq(3);
-    });*/
+    });
 
     /*it('Verify it is possible drag 2', () => {
         cy.contains('div.cu-data-view-item__name-text', 'Board').click();
