@@ -11,9 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^8.7.0"
+    "cypress": "^8.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.0"
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
