@@ -5,7 +5,8 @@ Feature: User Login
         And I put a password "Control123!"
         And I click on Login button
         And I go to Board page
-        And I create a task 
+        And I create a task
+      Then I verify the task was created 
 
 
     
