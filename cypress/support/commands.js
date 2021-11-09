@@ -27,7 +27,9 @@ import '@4tw/cypress-drag-drop'
 
 Cypress.Commands.add('login', () =>{
     cy.visit('/');
-    cy.get('input#login-email-input').type(Cypress.env('username1'));        
+    cy.wait(3000);
+    cy.get('input#login-email-input').type(Cypress.env('username1')); 
+    cy.wait(3000);       
     cy.get('input#login-password-input').type(Cypress.env('password1'));
     cy.get('button.login-page-new__main-form-button').click();
     /*cy.wait(5000);
