@@ -1,7 +1,7 @@
 
 describe('Login Page', () => {
 
-    /*    
+        
     it('Verify a new task can be added in To Do', () => {
         cy.login();
         cy.contains('div.cu-data-view-item__name-text', 'Board').click();
@@ -33,7 +33,7 @@ describe('Login Page', () => {
         cy.get('div.cu-panel-board__enter-button').click();
         cy.wait(3000);
         cy.contains('This is the test task in NEEDS REVIEW1.1').should('be.visible');
-    });*/
+    });
 
     it('Verify a task can be deleted from the Board', () => {
         cy.login();
